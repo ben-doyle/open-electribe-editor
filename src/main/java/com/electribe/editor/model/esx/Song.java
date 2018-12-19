@@ -1,0 +1,382 @@
+
+package com.electribe.editor.model.esx;
+
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Song</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getName <em>Name</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getTempo <em>Tempo</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getTempoLock <em>Tempo Lock</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getSongLength <em>Song Length</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getMuteHold <em>Mute Hold</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getNextSongNumber <em>Next Song Number</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getNumberOfSongEventsCurrent <em>Number Of Song Events Current</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getNumberOfSongEventsOriginal <em>Number Of Song Events Original</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getSongPatterns <em>Song Patterns</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getSongEvents <em>Song Events</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#isEmpty <em>Empty</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getSongNumberOriginal <em>Song Number Original</em>}</li>
+ *   <li>{@link com.skratchdot.electribe.model.esx.Song#getSongNumberCurrent <em>Song Number Current</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @see EsxPackage#getSong()
+ * @model
+ * @generated
+ */
+public interface Song extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see EsxPackage#getSong_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link com.skratchdot.electribe.model.esx.Song#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Tempo</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Tempo</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tempo</em>' containment reference.
+	 * @see #setTempo(Tempo)
+	 * @see EsxPackage#getSong_Tempo()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	Tempo getTempo();
+
+	/**
+	 * Sets the value of the '{@link com.skratchdot.electribe.model.esx.Song#getTempo <em>Tempo</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tempo</em>' containment reference.
+	 * @see #getTempo()
+	 * @generated
+	 */
+	void setTempo(Tempo value);
+
+	/**
+	 * Returns the value of the '<em><b>Tempo Lock</b></em>' attribute.
+	 * The literals are from the enumeration {@link TempoLock}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Tempo Lock</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tempo Lock</em>' attribute.
+	 * @see TempoLock
+	 * @see #setTempoLock(TempoLock)
+	 * @see EsxPackage#getSong_TempoLock()
+	 * @model
+	 * @generated
+	 */
+	TempoLock getTempoLock();
+
+	/**
+	 * Sets the value of the '{@link com.skratchdot.electribe.model.esx.Song#getTempoLock <em>Tempo Lock</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tempo Lock</em>' attribute.
+	 * @see TempoLock
+	 * @see #getTempoLock()
+	 * @generated
+	 */
+	void setTempoLock(TempoLock value);
+
+	/**
+	 * Returns the value of the '<em><b>Song Length</b></em>' attribute.
+	 * The literals are from the enumeration {@link SongLength}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Song Length</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Song Length</em>' attribute.
+	 * @see SongLength
+	 * @see #setSongLength(SongLength)
+	 * @see EsxPackage#getSong_SongLength()
+	 * @model
+	 * @generated
+	 */
+	SongLength getSongLength();
+
+	/**
+	 * Sets the value of the '{@link com.skratchdot.electribe.model.esx.Song#getSongLength <em>Song Length</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Song Length</em>' attribute.
+	 * @see SongLength
+	 * @see #getSongLength()
+	 * @generated
+	 */
+	void setSongLength(SongLength value);
+
+	/**
+	 * Returns the value of the '<em><b>Mute Hold</b></em>' attribute.
+	 * The literals are from the enumeration {@link MuteHold}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Mute Hold</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Mute Hold</em>' attribute.
+	 * @see MuteHold
+	 * @see #setMuteHold(MuteHold)
+	 * @see EsxPackage#getSong_MuteHold()
+	 * @model
+	 * @generated
+	 */
+	MuteHold getMuteHold();
+
+	/**
+	 * Sets the value of the '{@link com.skratchdot.electribe.model.esx.Song#getMuteHold <em>Mute Hold</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Mute Hold</em>' attribute.
+	 * @see MuteHold
+	 * @see #getMuteHold()
+	 * @generated
+	 */
+	void setMuteHold(MuteHold value);
+
+	/**
+	 * Returns the value of the '<em><b>Next Song Number</b></em>' attribute.
+	 * The literals are from the enumeration {@link NextSongNumber}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Next Song Number</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Next Song Number</em>' attribute.
+	 * @see NextSongNumber
+	 * @see #setNextSongNumber(NextSongNumber)
+	 * @see EsxPackage#getSong_NextSongNumber()
+	 * @model
+	 * @generated
+	 */
+	NextSongNumber getNextSongNumber();
+
+	/**
+	 * Sets the value of the '{@link com.skratchdot.electribe.model.esx.Song#getNextSongNumber <em>Next Song Number</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Next Song Number</em>' attribute.
+	 * @see NextSongNumber
+	 * @see #getNextSongNumber()
+	 * @generated
+	 */
+	void setNextSongNumber(NextSongNumber value);
+
+	/**
+	 * Returns the value of the '<em><b>Number Of Song Events Current</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Number Of Song Events Current</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Number Of Song Events Current</em>' attribute.
+	 * @see EsxPackage#getSong_NumberOfSongEventsCurrent()
+	 * @model transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	short getNumberOfSongEventsCurrent();
+
+	/**
+	 * Returns the value of the '<em><b>Number Of Song Events Original</b></em>' attribute.
+	 * The default value is <code>"0"</code>.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Number Of Song Events Original</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Number Of Song Events Original</em>' attribute.
+	 * @see #setNumberOfSongEventsOriginal(short)
+	 * @see EsxPackage#getSong_NumberOfSongEventsOriginal()
+	 * @model default="0"
+	 * @generated
+	 */
+	short getNumberOfSongEventsOriginal();
+
+	/**
+	 * Sets the value of the '{@link com.skratchdot.electribe.model.esx.Song#getNumberOfSongEventsOriginal <em>Number Of Song Events Original</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Number Of Song Events Original</em>' attribute.
+	 * @see #getNumberOfSongEventsOriginal()
+	 * @generated
+	 */
+	void setNumberOfSongEventsOriginal(short value);
+
+	/**
+	 * Returns the value of the '<em><b>Song Patterns</b></em>' containment reference list.
+	 * The list contents are of type {@link SongPattern}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Song Patterns</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Song Patterns</em>' containment reference list.
+	 * @see EsxPackage#getSong_SongPatterns()
+	 * @model containment="true" lower="256" upper="256"
+	 * @generated
+	 */
+	EList<SongPattern> getSongPatterns();
+
+	/**
+	 * Returns the value of the '<em><b>Song Events</b></em>' containment reference list.
+	 * The list contents are of type {@link SongEvent}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Song Events</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Song Events</em>' containment reference list.
+	 * @see EsxPackage#getSong_SongEvents()
+	 * @model containment="true" upper="20000"
+	 * @generated
+	 */
+	EList<SongEvent> getSongEvents();
+
+	/**
+	 * Returns the value of the '<em><b>Empty</b></em>' attribute.
+	 * The default value is <code>"true"</code>.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Empty</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Empty</em>' attribute.
+	 * @see EsxPackage#getSong_Empty()
+	 * @model default="true" transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	boolean isEmpty();
+
+	/**
+	 * Returns the value of the '<em><b>Song Number Original</b></em>' attribute.
+	 * The default value is <code>"-1"</code>.
+	 * The literals are from the enumeration {@link SongNumber}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Song Number Original</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Song Number Original</em>' attribute.
+	 * @see SongNumber
+	 * @see #setSongNumberOriginal(SongNumber)
+	 * @see EsxPackage#getSong_SongNumberOriginal()
+	 * @model default="-1"
+	 * @generated
+	 */
+	SongNumber getSongNumberOriginal();
+
+	/**
+	 * Sets the value of the '{@link com.skratchdot.electribe.model.esx.Song#getSongNumberOriginal <em>Song Number Original</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Song Number Original</em>' attribute.
+	 * @see SongNumber
+	 * @see #getSongNumberOriginal()
+	 * @generated
+	 */
+	void setSongNumberOriginal(SongNumber value);
+
+	/**
+	 * Returns the value of the '<em><b>Song Number Current</b></em>' attribute.
+	 * The default value is <code>"-1"</code>.
+	 * The literals are from the enumeration {@link SongNumber}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Song Number Current</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Song Number Current</em>' attribute.
+	 * @see SongNumber
+	 * @see EsxPackage#getSong_SongNumberCurrent()
+	 * @model default="-1" transient="true" changeable="false" volatile="true" derived="true"
+	 * @generated
+	 */
+	SongNumber getSongNumberCurrent();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void initSong(byte[] b);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void initSong(byte[] b, int songNumber);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void initSongEvents(byte[] b);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	byte[] toSongByteArray();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	byte[] toSongEventsByteArray();
+
+} // Song

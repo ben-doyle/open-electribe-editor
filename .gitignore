@@ -1,5 +1,10 @@
+.idea/
+.DS_Store
 */bin/
 */javaCompiler...args
-build.xml
 */feature.temp.folder/
-com.skratchdot.electribe.builds.releng/buildDirectory/
+
+build.xml
+
+lib/
+target/
